@@ -14,7 +14,7 @@ class Data extends Component {
                 {this.props.value.state.empdata.map((item)=>{
                     return(
                         <div className="two">
-                            <span>{item.name}</span> | <span>{item.department}</span>| <span>{item.rating}</span> | 
+                            <span>Name:{item.name}</span> | <span>Department:{item.department}</span>| <span>Rating:{item.rating}</span>  
                         {/* <div>{item.name}
                         </div>
                         <div>{item.department}

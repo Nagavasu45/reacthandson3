@@ -22,11 +22,18 @@ function Form(){
     
     var handlesubmit=(e)=>{
         e.preventDefault()
+        if(!state.name || !state.department || !state.rating)
+        {
+            alert("fill the all fields in the form")
+            return;
+        }
         var tempobj={
             name:state.name,
             department:state.department,
             rating:state.rating
         }
+
+
         var tmp=[...state.empdata,tempobj]
         // state.empdata.push(tempobj)
         // console.log(state.empdata)
